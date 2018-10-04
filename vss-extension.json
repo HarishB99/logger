@@ -1,0 +1,33 @@
+{
+    "manifestVersion": 1,
+    "id": "harish-logger-task",
+    "version": "0.0.0.2",
+    "name": "Harish Logging Tools",
+    "description": "A Visual Studio Services release task to log variables for debugging purposes.",
+    "publisher": "HarishB",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "categories": [
+        "Build and release"
+    ],
+    "contributions": [
+        {
+            "id": "harish-logging-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "logger"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "logger"
+        }
+    ]
+}

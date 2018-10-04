@@ -1,0 +1,44 @@
+{
+    "id": "d8527962-54f8-4d2a-943f-3d83a50054b0",
+    "name": "harish_release_logging_extension",
+    "friendlyName": "Harish Logging Tools",
+    "description": "A release task that can be added to a release pipeline.",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "visibility": [
+        "Release"
+    ],
+    "author": "Harish S/O Balamurugan",
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 2
+    },
+    "runsOn": [
+        "Agent"
+    ],
+    "instanceNameFormat": "Logging Task",
+    "groups": [
+        {
+            "name": "advanced",
+            "displayName": "Advanced",
+            "isExpanded": false
+        }
+    ],
+    "inputs": [
+        {
+            "name": "some_var",
+            "type": "string",
+            "label": "Some Variable",
+            "defaultValue": "",
+            "required": false,
+            "groupName": "advanced",
+            "helpMarkDown": "Not Applicable"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "del HarishB.harish-logger-task-*.vsix",
+    "build": "node_modules/.bin/tfx extension create",
+    "preversion": "del HarishB.harish-logger-task-*.vsix",
+    "version": "node_modules/.bin/tfx extension create --rev-version"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vss-web-extension-sdk": "^5.140.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "tfx-cli": "^0.6.1",
+    "typescript": "^3.0.3"
+  }
+}
